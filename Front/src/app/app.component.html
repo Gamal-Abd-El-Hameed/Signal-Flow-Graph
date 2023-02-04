@@ -1,0 +1,8 @@
+<button (click) = "addNewNode()" class="clickableButton">Add Node</button>
+<button (click) = "addNewBranch()" class="clickableButton">Add Branch</button>
+<label for="gain" style="margin-left: 5pt; margin-right: 5pt; font-family: 'Courier New', Courier, monospace; font-style:inherit">Branch Gain</label>
+<input #gain type="text" (keyup) = "getNewGain(gain.value)" value = "{{gainValue}}" style="margin-right: 50pt;">
+<button (click) = "clear()" class="clickableButton">Clear</button>
+<button (click) = "solve()" class="clickableButton"> Solve </button>
+<div id = "container" class="cover"></div>
+<label id="ans">{{ans}}</label>
